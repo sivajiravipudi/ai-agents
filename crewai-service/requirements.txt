@@ -1,0 +1,6 @@
+crewai==0.121.1
+crewai-tools==0.44.0
+fastapi==0.115.12
+uvicorn[standard]==0.34.2
+python-dotenv==1.1.0
+requests==2.32.3

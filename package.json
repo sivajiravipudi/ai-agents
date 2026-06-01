@@ -1,0 +1,44 @@
+{
+  "name": "core-engineering-agents-multi",
+  "version": "1.0.0",
+  "description": "Simple AI agent built with AWS Strands TypeScript SDK + OpenAI + MCP",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node --enable-source-maps dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "mcp": "tsx watch src/mcp/nasdaq-mcp-server.ts --http",
+    "client": "npm --prefix client run dev",
+    "crewai": "cd crewai-service && uvicorn main:app --host 0.0.0.0 --port 3003 --reload"
+  },
+  "keywords": [
+    "strands",
+    "ai-agent",
+    "mcp",
+    "openai",
+    "react"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@google/genai": "^1.52.0",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@strands-agents/sdk": "^1.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.5.2",
+    "node-cache": "^5.1.2",
+    "openai": "^6.37.0",
+    "yahoo-finance2": "^2.14.0",
+    "zod": "^4.1.12"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^25.7.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.6.3"
+  }
+}
