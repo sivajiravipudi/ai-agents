@@ -9,7 +9,7 @@
     "dev": "tsx watch src/index.ts",
     "mcp": "tsx watch src/mcp/nasdaq-mcp-server.ts --http",
     "client": "npm --prefix client run dev",
-    "crewai": "cd crewai-service && uvicorn main:app --host 0.0.0.0 --port 3003 --reload"
+    "crewai": "cd crewai-service && python uvicorn main:app --host 0.0.0.0 --port 3003 --reload"
   },
   "keywords": [
     "strands",
