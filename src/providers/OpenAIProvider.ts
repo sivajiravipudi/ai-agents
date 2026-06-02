@@ -23,5 +23,6 @@ export function createOpenAIProvider(): OpenAIModel {
   return new OpenAIModel({
     api: "chat",
     modelId,
+    apiKey: process.env.OPENAI_API_KEY,
   });
 }

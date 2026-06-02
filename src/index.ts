@@ -11,7 +11,8 @@
  * Start it independently:  npm run mcp
  */
 
-import "dotenv/config";
+import dotenv from "dotenv";
+dotenv.config({ override: true });
 import express from "express";
 import cors from "cors";
 import rateLimit from "express-rate-limit";

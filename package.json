@@ -1,5 +1,5 @@
 {
-  "name": "core-engineering-agents-multi",
+  "name": "ai-agents",
   "version": "1.0.0",
   "description": "Simple AI agent built with AWS Strands TypeScript SDK + OpenAI + MCP",
   "main": "dist/index.js",
